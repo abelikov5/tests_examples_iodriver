@@ -36,7 +36,7 @@ describe("Restapi test", () => {
 ***************** установка драйвера wdio для тестов *******************
 0. Старндарная инициализация проекта: npm init -y.
 
-1. npm i @wdio/cli —-save-dev
+1. npm i @wdio/cli --save-dev
 2. После установки делаем настройку
 	./node_modules/.bin/wdio config
 3. npm i chai
@@ -48,4 +48,9 @@ describe("Restapi test", () => {
 
 0. В установке wdio выбираем выбираем отчет allure  (при конфигурации)
 1. Устанавливаем npm i allure-commandline —-save-dev
-2. в конфигурации (wide.conf.js) в reporters добавляем  disableWebdriverStepsReporting: true  ******** cypress ****** npm i cypress наиболее динамично развивающийся проект
+2. в конфигурации (wide.conf.js) в reporters добавляем  disableWebdriverStepsReporting: true
+
+ reporters: ['spec', ['allure', {outputDir: 'allure-results', disableWebdriverStepReporting: true}]],
+
+
+******** cypress ****** npm i cypress наиболее динамично развивающийся проект
