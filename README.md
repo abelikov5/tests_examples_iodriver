@@ -53,4 +53,7 @@ describe("Restapi test", () => {
  reporters: ['spec', ['allure', {outputDir: 'allure-results', disableWebdriverStepReporting: true}]],
 
 
-******** cypress ****** npm i cypress наиболее динамично развивающийся проект
+******** cypress ******
+
+npm i cypress
+наиболее динамично развивающийся проект
