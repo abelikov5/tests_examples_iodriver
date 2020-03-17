@@ -47,7 +47,7 @@ describe("Restapi test", () => {
 **************** allure отчет *************
 
 0. В установке wdio выбираем выбираем отчет allure  (при конфигурации)
-1. Устанавливаем npm i allure-commandline —-save-dev
+1. Устанавливаем npm i allure-commandline --save-dev
 2. в конфигурации (wide.conf.js) в reporters добавляем  disableWebdriverStepsReporting: true
 
  reporters: ['spec', ['allure', {outputDir: 'allure-results', disableWebdriverStepReporting: true}]],
